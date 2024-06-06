@@ -14,7 +14,7 @@ const myServer2=new Server({verbose:true});
 myServer1.deploy(
     {
         port:8001,
-        root:'./site1/'
+        root:'./sites/site1/'
     },
     serverReady
 );
@@ -28,7 +28,7 @@ function serverReady(server){
 //Deploy Server
 myServer2.deploy( {
     port:8002,
-    root:'./site2/'
+    root:'./sites/site2/'
 },
 serverReady
 );
